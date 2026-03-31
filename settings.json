@@ -1,0 +1,108 @@
+{
+  // === 字体与 UI 外观 ===
+  // 界面 UI 字体设定
+  "ui_font_family": "PingFang SC",
+  // 编辑器代码字体设定
+  "buffer_font_family": "LXGW WenKai Mono",
+  "buffer_font_size": 18.0,
+  // 主题配置（支持明暗模式设定）
+  "theme": {
+    "mode": "light",
+    "light": "macOS Classic Light",
+    "dark": "One Dark"
+  },
+
+  // === 编辑器核心行为 ===
+  // 基础快捷键映射 (使用 JetBrains 习惯)
+  "base_keymap": "JetBrains",
+  // 禁用右侧代码缩略图 (Minimap)
+  "minimap": {
+    "show": "never"
+  },
+  // 隐藏水平滚动条
+  "scrollbar": {
+    "axes": {
+      "horizontal": false
+    }
+  },
+  // 隐藏行首的灯泡/代码操作提示图标
+  "inline_code_actions": false,
+  // 禁用拖拽选中文本的功能
+  "drag_and_drop_selection": {
+    "enabled": false
+  },
+  // 开启光标平滑闪烁
+  "cursor_blink": true,
+
+  // === 视觉辅助 (括号与缩进) ===
+  // 开启彩虹括号匹配着色
+  "colorize_brackets": true,
+  // 开启智能缩进参考线与背景着色
+  "indent_guides": {
+    "coloring": "indent_aware",
+    "background_coloring": "indent_aware"
+  },
+
+  // === 文件保存与工作区状态 ===
+  // 全局默认关闭保存时格式化
+  "format_on_save": "off",
+  // 延迟 10 秒 (10000ms) 自动保存
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 10000
+    }
+  },
+  // 启动时始终打开空标签页，不恢复上次的会话
+  "restore_on_startup": "launchpad",
+  // 禁用单击文件时的“预览标签页”模式 (斜体标签页)
+  "preview_tabs": {
+    "enabled": true,
+  },
+
+  // === 终端设置 ===
+  "terminal": {
+    "font_size": 14,
+    // 终端光标样式为竖线
+    "cursor_shape": "bar",
+    // 终端光标开启闪烁
+    "blinking": "on",
+    // 终端最小文本对比度
+    "minimum_contrast": 45
+  },
+
+  // === 代码提示与内联信息 ===
+  // 开启变量类型、参数名称等内联提示 (Inlay Hints)
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true
+  },
+
+  // === 特定语言覆盖配置 ===
+  "languages": {
+    "C++": {
+      // 仅对 C++ 开启保存时自动格式化
+      "format_on_save": "on"
+    }
+  },
+
+  // === LSP (语言服务器) 核心配置 ===
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "arguments": [
+          "--pretty",
+          "--log=verbose",
+          "--compile-commands-dir=cmake-build-debug",
+          "--background-index",
+          "--clang-tidy",
+          "--completion-style=detailed",
+          "--pch-storage=memory",
+          "--all-scopes-completion",
+          "--header-insertion=iwyu"
+        ]
+      }
+    }
+  }
+}
