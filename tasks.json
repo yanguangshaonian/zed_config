@@ -2,14 +2,12 @@
   {
     "label": "Global CMake: One-Click Build (Debug)",
     "command": "cmake -S . -B cmake-build-debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON && cmake --build cmake-build-debug",
-    "description": "一键生成配置并编译当前项目 (Debug)",
     "use_new_terminal": false,
     "allow_concurrent_runs": false
   },
   {
     "label": "Global CMake: One-Click Build (Release)",
     "command": "cmake -S . -B cmake-build-release -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXPORT_COMPILE_COMMANDS=ON && cmake --build cmake-build-release",
-    "description": "一键生成配置并编译当前项目 (Release)",
     "use_new_terminal": false,
     "allow_concurrent_runs": false
   }

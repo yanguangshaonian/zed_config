@@ -1,108 +1,133 @@
 {
-  // === 字体与 UI 外观 ===
-  // 界面 UI 字体设定
-  "ui_font_family": "PingFang SC",
-  // 编辑器代码字体设定
-  "buffer_font_family": "LXGW WenKai Mono",
-  "buffer_font_size": 18.0,
-  // 主题配置（支持明暗模式设定）
-  "theme": {
-    "mode": "light",
-    "light": "macOS Classic Light",
-    "dark": "One Dark"
-  },
-
-  // === 编辑器核心行为 ===
-  // 基础快捷键映射 (使用 JetBrains 习惯)
-  "base_keymap": "JetBrains",
-  // 禁用右侧代码缩略图 (Minimap)
-  "minimap": {
-    "show": "never"
-  },
-  // 隐藏水平滚动条
-  "scrollbar": {
-    "axes": {
-      "horizontal": false
-    }
-  },
-  // 隐藏行首的灯泡/代码操作提示图标
-  "inline_code_actions": false,
-  // 禁用拖拽选中文本的功能
-  "drag_and_drop_selection": {
-    "enabled": false
-  },
-  // 开启光标平滑闪烁
-  "cursor_blink": true,
-
-  // === 视觉辅助 (括号与缩进) ===
-  // 开启彩虹括号匹配着色
-  "colorize_brackets": true,
-  // 开启智能缩进参考线与背景着色
-  "indent_guides": {
-    "coloring": "indent_aware",
-    "background_coloring": "indent_aware"
-  },
-
-  // === 文件保存与工作区状态 ===
-  // 全局默认关闭保存时格式化
-  "format_on_save": "off",
-  // 延迟 10 秒 (10000ms) 自动保存
-  "autosave": {
-    "after_delay": {
-      "milliseconds": 10000
-    }
-  },
-  // 启动时始终打开空标签页，不恢复上次的会话
-  "restore_on_startup": "launchpad",
-  // 禁用单击文件时的“预览标签页”模式 (斜体标签页)
-  "preview_tabs": {
-    "enabled": true,
-  },
-
-  // === 终端设置 ===
-  "terminal": {
-    "font_size": 14,
-    // 终端光标样式为竖线
-    "cursor_shape": "bar",
-    // 终端光标开启闪烁
-    "blinking": "on",
-    // 终端最小文本对比度
-    "minimum_contrast": 45
-  },
-
-  // === 代码提示与内联信息 ===
-  // 开启变量类型、参数名称等内联提示 (Inlay Hints)
-  "inlay_hints": {
-    "enabled": true,
-    "show_type_hints": true,
-    "show_parameter_hints": true,
-    "show_other_hints": true
-  },
-
-  // === 特定语言覆盖配置 ===
-  "languages": {
-    "C++": {
-      // 仅对 C++ 开启保存时自动格式化
-      "format_on_save": "on"
-    }
-  },
-
-  // === LSP (语言服务器) 核心配置 ===
-  "lsp": {
-    "clangd": {
-      "binary": {
-        "arguments": [
-          "--pretty",
-          "--log=verbose",
-          "--compile-commands-dir=cmake-build-debug",
-          "--background-index",
-          "--clang-tidy",
-          "--completion-style=detailed",
-          "--pch-storage=memory",
-          "--all-scopes-completion",
-          "--header-insertion=iwyu"
-        ]
-      }
-    }
-  }
+    // === 字体与 UI 外观 ===
+    // 界面 UI 字体设定
+    "ssh_connections": [
+        {
+            "host": "vm-ubuntu-desktop",
+            "username": "yanguangshaonian",
+            "args": [],
+            "projects": [
+                {
+                    "paths": ["/home/yanguangshaonian/zhangxinyu/mem_box"],
+                },
+                {
+                    "paths": ["/home/yanguangshaonian/zhangxinyu/rstd"],
+                },
+            ],
+        },
+    ],
+    "ui_font_family": "PingFang SC",
+    // 制表符宽度
+    "tab_size": 4,
+    "hard_tabs": false,
+    // 编辑器代码字体设定
+    "buffer_font_family": "LXGW WenKai Mono",
+    // 编辑器代码字体大小
+    "buffer_font_size": 18.0,
+    // 主题配置（支持明暗模式设定）
+    "theme": {
+        // 当前强制使用亮色模式 (可选 system 跟随系统)
+        "mode": "light",
+        // 亮色模式下的主题样式
+        "light": "macOS Classic Light",
+    },
+    // === 编辑器核心行为 ===
+    // 基础快捷键映射 (使用 JetBrains 习惯)
+    "base_keymap": "JetBrains",
+    // 禁用右侧代码缩略图 (Minimap)
+    "minimap": {
+        "show": "never",
+    },
+    // 隐藏水平滚动条
+    "scrollbar": {
+        "axes": {
+            "horizontal": false,
+        },
+    },
+    // 隐藏行首的灯泡/代码操作提示图标
+    "inline_code_actions": false,
+    // 禁用拖拽选中文本的功能
+    "drag_and_drop_selection": {
+        "enabled": false,
+    },
+    // 开启光标平滑闪烁
+    "cursor_blink": true,
+    // === 视觉辅助 (括号与缩进) ===
+    // 开启彩虹括号匹配着色
+    "colorize_brackets": true,
+    // 开启智能缩进参考线与背景着色
+    "indent_guides": {
+        "coloring": "indent_aware",
+        "background_coloring": "indent_aware",
+    },
+    // === 文件保存与工作区状态 ===
+    // 全局默认关闭保存时格式化
+    "format_on_save": "on",
+    // 延迟 10 秒 (10000ms) 自动保存
+    "autosave": {
+        "after_delay": {
+            "milliseconds": 10000,
+        },
+    },
+    // 启动时始终打开启动页 (Launchpad)，不恢复上次的会话标签页
+    "restore_on_startup": "launchpad",
+    // 启用单击文件时的“预览标签页”模式 (斜体标签页，单击覆盖，双击固定)
+    "preview_tabs": {
+        "enabled": true,
+    },
+    // === 终端设置 ===
+    "terminal": {
+        // 终端内文本字体大小
+        "font_size": 14,
+        // 终端光标样式为竖线
+        "cursor_shape": "bar",
+        // 终端光标开启闪烁
+        "blinking": "on",
+        // 终端最小文本对比度 (Zed 特有的 APCA 算法，数值越高对比度越强)
+        "minimum_contrast": 45,
+        "detect_venv": {
+            "on": {
+                "directories": ["~/.python_env"],
+                "activate_script": "default",
+            },
+        },
+    },
+    // === 代码提示与内联信息 ===
+    // 开启变量类型、参数名称等内联提示 (Inlay Hints, 代码里灰色的字)
+    "inlay_hints": {
+        // 全局总开关
+        "enabled": true,
+        // 显示变量/函数返回的类型提示
+        "show_type_hints": true,
+        // 显示函数调用时的参数名提示
+        "show_parameter_hints": true,
+        // 显示其他杂项提示 (如链式调用的中间类型等)
+        "show_other_hints": true,
+    },
+    "lsp": {
+        "clangd": {
+            "binary": {
+                "arguments": [
+                    // 让输出排版更加美观易读
+                    "--pretty",
+                    // 开启详细日志记录，方便排查崩溃或提示失败等问题
+                    "--log=verbose",
+                    // 明确告知 clangd 去哪里寻找 compile_commands.json 编译数据库
+                    "--compile-commands-dir=cmake-build-debug",
+                    // 在后台静默对整个项目建立索引，大幅提升跳转和搜索速度
+                    "--background-index",
+                    // 启动 clang-tidy 静态代码检查，实时揪出潜在 Bug
+                    "--clang-tidy",
+                    // 让补全菜单展示极其详细的函数签名和返回类型
+                    "--completion-style=detailed",
+                    // 将预编译头文件 (PCH) 储存在内存中，牺牲少量内存换取极致响应速度
+                    "--pch-storage=memory",
+                    // 即便还没 #include 头文件，也会在输入时推荐全局库中的符号
+                    "--all-scopes-completion",
+                    // 配合上一条，选中未引入的符号时，自动在文件顶部插入对应的 #include 语句
+                    "--header-insertion=iwyu",
+                ],
+            },
+        },
+    },
 }
