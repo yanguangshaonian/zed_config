@@ -6,14 +6,7 @@
             "host": "vm-ubuntu-desktop",
             "username": "yanguangshaonian",
             "args": [],
-            "projects": [
-                {
-                    "paths": ["/home/yanguangshaonian/zhangxinyu/mem_box"],
-                },
-                {
-                    "paths": ["/home/yanguangshaonian/zhangxinyu/rstd"],
-                },
-            ],
+            "projects": [],
         },
     ],
     "ui_font_family": "PingFang SC",
@@ -30,6 +23,7 @@
         "mode": "light",
         // 亮色模式下的主题样式
         "light": "macOS Classic Light",
+        "dark": "One Dark",
     },
     // === 编辑器核心行为 ===
     // 基础快捷键映射 (使用 JetBrains 习惯)
