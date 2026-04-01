@@ -1,4 +1,14 @@
 {
+    "agent": {
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "gemini-3.1-pro-preview",
+            "enable_thinking": false,
+            "effort": "high",
+        },
+        "favorite_models": [],
+        "model_parameters": [],
+    },
     "ssh_connections": [
         {
             "host": "vm-ubuntu-desktop",
@@ -129,6 +139,11 @@
                     "--header-insertion=iwyu",
                 ],
             },
+        },
+    },
+    "languages": {
+        "C++": {
+            // "document_symbols": "on",
         },
     },
 }
