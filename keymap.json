@@ -1,0 +1,9 @@
+[
+    // 优先使用agent的辅助代码
+    {
+        "context": "Editor && edit_prediction",
+        "bindings": {
+            "shift-tab": "editor::AcceptEditPrediction",
+        },
+    },
+]
