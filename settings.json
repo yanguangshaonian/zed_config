@@ -16,7 +16,8 @@
     // 编辑器代码字体设定
     "buffer_font_family": "LXGW WenKai Mono",
     // 编辑器代码字体大小
-    "buffer_font_size": 18.0,
+    "buffer_font_size": 22.0,
+    "buffer_font_weight": 200,
     // 主题配置（支持明暗模式设定）
     "theme": {
         // 当前强制使用亮色模式 (可选 system 跟随系统)
