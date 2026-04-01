@@ -148,4 +148,9 @@
             // "document_symbols": "on",
         },
     },
+    "helix_mode": true,
+    "which_key": {
+        "enabled": true,
+        "delay_ms": 100,
+    },
 }
