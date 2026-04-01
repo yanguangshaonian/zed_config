@@ -1,4 +1,6 @@
 {
+    "icon_theme": "Catppuccin Latte",
+    "proxy": "socks5://127.0.0.1:7897",
     "agent": {
         "default_model": {
             "provider": "copilot_chat",
