@@ -1,6 +1,4 @@
 {
-    // === 字体与 UI 外观 ===
-    // 界面 UI 字体设定
     "ssh_connections": [
         {
             "host": "vm-ubuntu-desktop",
@@ -9,6 +7,12 @@
             "projects": [],
         },
     ],
+    // === 字体与 UI 外观 ===
+    // 界面 UI 字体设定
+    "project_panel": {
+        // 隐藏项目面板中的根目录
+        "hide_root": true,
+    },
     "ui_font_family": "PingFang SC",
     // 制表符宽度
     "tab_size": 4,
@@ -73,7 +77,7 @@
     // === 终端设置 ===
     "terminal": {
         // 终端内文本字体大小
-        "font_size": 14,
+        "font_size": 18,
         // 终端光标样式为竖线
         "cursor_shape": "bar",
         // 终端光标开启闪烁
@@ -87,6 +91,8 @@
             },
         },
     },
+    // 设置终端左右填充全部空间
+    "bottom_dock_layout": "full",
     // === 代码提示与内联信息 ===
     // 开启变量类型、参数名称等内联提示 (Inlay Hints, 代码里灰色的字)
     "inlay_hints": {
